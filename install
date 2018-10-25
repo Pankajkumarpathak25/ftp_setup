@@ -1,0 +1,44 @@
+  69  sudo ufw enable
+   70  sudo apt-get install vsftpd
+   71  ufw allow 20/tcp
+   72  sudo  ufw allow 20/tcp
+   73  sudo  ufw allow 21/tcp
+   74  sudo  ufw allow 990/tcp
+   75  sudo  ufw allow 40000:50000/tcp
+   76  sudo  ufw status
+   77  sudo adduser trident
+   78  cd ..
+   79  sudo mkdir /home/trident/flask-application
+   80  chown nobody:nogroup /home/trident/flask-application/
+   81  sudo chown nobody:nogroup /home/trident/flask-application/
+   82  sudo chmod a-w /home/trident/flask-application/
+   83  ls -la /home/trident/flask-application/
+   84  sudo mkdir /home/trident/flask-application/files
+   85  sudo chown trident.trident /home/trident/flask-application/files/
+   86  ls -la /home/trident/flask-application/files/
+   87  ls -la /home/trident/flask-application/
+   88  echo "hello world" | sudo tee /home/trident/flask-application/files/hello.txt
+   89  vim /etc/vsftpd.conf 
+   90  sudo vim /etc/vsftpd.conf
+   91  echo "trident" | sudo tee -a /etc/vsftpd_userlist
+   92  cat /etc/vsftpd_userlist 
+   93  sudo systemctl restart vsftpd
+   94  sudo systemctl status vsftpd
+   95  ftp -p 172.32.4.32
+   96  sudo systemctl status vsftpd
+   97  sudo systemctl restart vsftpd
+   98  ifconfig 
+   99  cd /etc/
+  100  sudo vim vsftpd.conf 
+  101  echo "trident" | sudo tee -a /etc/vsftpd_userlist 
+  102  cat /etc/vsftpd_userlist 
+  103  sudo systemctl restart vsftpd
+  104  ftp -p 172.32.4.32
+  105  su root
+  106  cd
+  107  ftp -p 172.32.4.32
+  108  sudo ufw status
+  109  ftp -p 34.255.238.160
+  110  sudo systemctl restart vsftpd
+  111  sudo systemctl status vsftpd
+  112  cd /home/trident/flask-application/files/
